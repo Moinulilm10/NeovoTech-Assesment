@@ -1,5 +1,6 @@
 import HomeButton from "@/components/HomeButton";
 import NextButton from "@/components/NextButton";
+import cityCoordinates from "@/coordinates/CityCoordinates";
 import dynamic from "next/dynamic";
 import { useContext, useState } from "react";
 import { AppContext } from "./_app";

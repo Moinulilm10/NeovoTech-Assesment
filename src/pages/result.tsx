@@ -23,7 +23,7 @@ const Results = () => {
             ) : (
               <>
                 <h1 className="my-1 mx-auto font-weight-bold display-4">
-                  WELL DONE!
+                  well done
                 </h1>
                 <h1 className="my-1 mx-auto font-weight-bold display-4">
                   You have completed the Game

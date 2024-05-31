@@ -28,7 +28,7 @@ export default function Home() {
         </section>
         <section className="d-flex justify-content-center align-items-center position-relative">
           <Image
-            src={require("../public/earth.webp")}
+            src={require("/public/earth.webp")}
             width={500}
             height={500}
             alt="earth image to appear"
@@ -36,7 +36,7 @@ export default function Home() {
           />
           <Image
             style={{ position: "absolute", top: "4rem", left: "14rem" }}
-            src={require("../public/guess-pin.svg")}
+            src={require("/public/guess-pin.svg")}
             width={30}
             height={30}
             alt={"guess pin"}
@@ -44,7 +44,7 @@ export default function Home() {
           />
           <Image
             style={{ position: "absolute", top: "5rem", left: "12rem" }}
-            src={require("../public/location-pin.svg")}
+            src={require("/public/location-pin.svg")}
             width={30}
             height={30}
             alt={"location pin"}
