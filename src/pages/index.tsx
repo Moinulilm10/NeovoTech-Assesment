@@ -1,4 +1,3 @@
-import ArrowIcon from "@/components/ArrowIcon";
 import StartButton from "@/components/StarButton";
 import { Inter } from "next/font/google";
 import Head from "next/head";
@@ -21,9 +20,7 @@ export default function Home() {
           You have to find the location of the city on the map to within 50km.
         </h4>
         <section>
-          <div className="my-2 mx-auto text-center">
-            <ArrowIcon />
-          </div>
+          <div className="my-2 mx-auto text-center"></div>
           <StartButton />
         </section>
         <section className="d-flex justify-content-center align-items-center position-relative">
