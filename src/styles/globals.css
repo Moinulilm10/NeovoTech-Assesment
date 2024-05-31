@@ -2,32 +2,126 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bodoni+Moda:opsz@6..96&family=Lato&family=Marcellus&family=Poppins&family=Source+Sans+Pro&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Marcellus", serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.main {
+  color: #fff;
+  padding: 1rem;
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.buttonSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+button {
+  background-color: #fff;
+  color: #000;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e8e6e6;
+}
+
+.distance-score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto 0;
+  width: 100%;
+}
+
+.distance-score div h4,
+.distance-score div h5 {
+  font-size: 1rem;
+}
+
+.map {
+  height: 50vh;
+  width: 95vw;
+}
+
+.locationMarker {
+  background-color: #2289e5;
+  border: 1px solid #000;
+  padding: 7.5px;
+  border-radius: 50%;
+  color: #000;
+}
+
+.correctMarker,
+.incorrectMarker {
+  background-color: #0ec917;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.incorrectMarker {
+  background-color: #dc2028;
+}
+
+.answer {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.results {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    padding: 2rem;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  .distance-score {
+    width: 600px;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .distance-score div h4,
+  .distance-score div h5 {
+    font-size: 1.3rem;
+  }
+
+  .map {
+    height: 500px;
+    width: 500px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+  }
+
+  .marker {
+    background-color: red;
+  }
+
+  .results {
+    width: 50%;
   }
 }
