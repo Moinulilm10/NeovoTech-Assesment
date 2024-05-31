@@ -16,7 +16,7 @@ const Results = () => {
             {state.index < cityCoordinates.cities.length - 1 ? (
               <>
                 <h1 className="mt-5 mb-2 mx-auto font-weight-bold display-2">
-                  Game
+                  Game over
                 </h1>
                 <h3 className="mb-5 mx-auto">You ran out of kilometers!</h3>
               </>
