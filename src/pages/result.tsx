@@ -32,9 +32,7 @@ const Results = () => {
             )}
             <h1 className="my-3 mx-auto font-weight-bold display-4">{`Final Score: ${state.citiesFound}`}</h1>
             <br />
-            <h2 className="mt-5 mb-4 mb-1 mx-auto font-weight-bold">
-              Performance
-            </h2>
+            <h2 className="mt-5  mb-1 mx-auto font-weight-bold">Performance</h2>
             <h3 className="mb-3 mx-auto font-italic">{reviewScore(state)}</h3>
             <h3 className="mb-5 mx-auto font-italic">{reviewKM(state)}</h3>
           </section>
