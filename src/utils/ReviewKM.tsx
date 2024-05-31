@@ -1,4 +1,4 @@
-import iState from "../interfaces/IState";
+import iState from "@/interfaces/iState";
 
 const reviewKM = (state: iState) => {
   let performance = "";
