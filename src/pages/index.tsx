@@ -25,9 +25,9 @@ export default function Home() {
         </section>
         <section className="d-flex justify-content-center align-items-center position-relative">
           <Image
-            src={require("/public/earth.webp")}
-            width={500}
-            height={500}
+            src={require("/public/earth_map.jpg")}
+            width={800}
+            height={200}
             alt="earth image to appear"
             priority
           />
